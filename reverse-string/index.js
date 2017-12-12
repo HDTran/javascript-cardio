@@ -13,7 +13,7 @@ function reverseStringByLoop(str) {
   return reversed;
 }
 
-// alternate solution -- reduce helper
+// alternate solution -- reduce() array helper
 function reverseByHelper(str) {
   // reduce takes in function and starting value
   return str.split('').reduce((reversedChain, characterCurrent) => characterCurrent + reversedChain, '');
