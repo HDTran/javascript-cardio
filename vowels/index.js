@@ -13,7 +13,7 @@ function vowels(str) {
 }
 
 function vowelsByRegex(str) {
-  let matchArr = str.toLowerCase().match(/[aeiou]/g);
+  let matchArr = str.match(/[aeiou]/gi);
   return matchArr === null ? 0 : matchArr.length;
 }
 
