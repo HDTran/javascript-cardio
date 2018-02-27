@@ -8,17 +8,21 @@
 function validate(node, min = null, max = null) {
   if(min !== null & node.data < min) {
     return false;
-  } else if(max !== null & node.data > max) {
-    return false;
-  } else if(node.left !== null && node.right !== null) {
-    return validate(node.left, min, node.data) && validate(node.right, node.data, max);
-  } else if(node.left !== null) {
-    return validate(node.left, min, node.data);
-  } else if(node.right !== null) {
-    return validate(node.right, node.data, max);
-  } else {
-    return true;
   }
+  
+  if(max !== null & node.data > max) {
+    return false;
+  }
+  
+  if(node.left !== null && !validate(node.left, min, node.data)) {
+    return false;
+  }
+  
+  if(node.right !== null && !validate(node.right, node.data, max)) {
+    return false;
+  }
+
+  return true;
 }
 
 module.exports = validate;
