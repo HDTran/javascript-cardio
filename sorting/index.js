@@ -33,11 +33,31 @@ function selectionSort(arr) {
 }
 
 function mergeSort(arr) {
+  if(arr.length === 1) {
+    return arr;
+  }
 
+  const center = Math.floor(arr.length / 2);
+
+  const left = arr.slice(0, center);
+  const right = arr.slice(center);
+
+  return merge(mergeSort(left), mergeSort(right));
 }
 
 function merge(left, right) {
+  const results = [];
 
+  while(left.length > 0 && right.length > 0) {
+    if(left[0] < right[0]) {
+      results.push(left.shift());
+    } else {
+      results.push(right.shift());
+    }
+  }
+
+  // both left and right at this point should be exclusively empty because of while loop
+  return [...results, ...left, ...right];
 }
 
-module.exports = { bubbleSort, selectionSort, mergeSort };
+module.exports = { bubbleSort, selectionSort, mergeSort, merge };
