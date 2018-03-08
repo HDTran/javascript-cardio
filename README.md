@@ -37,3 +37,12 @@ jest <folder-name>
 * [``/queue``](https://github.com/HDTran/javascript-cardio/tree/master/queue). Implement a Queue data structure class with an ``add()`` and ``remove()`` function.
 * [``/queue-from-stack``](https://github.com/HDTran/javascript-cardio/tree/master/queue-from-stack). Implement a Queue data structure class using two stacks with an ``add()``, ``remove()``, and ``peek()`` function.
 * [``/queue-weave``](https://github.com/HDTran/javascript-cardio/tree/master/queue-weave). Weave two queues by alternating removes between them into another queue, ignoring undefined values.
+* [``/reverse-int``](https://github.com/HDTran/javascript-cardio/tree/master/reverse-int). Reverse the numbers of an integer as if it were a string (ex. ``reverseInteger(15) === 51``).
+* [``/reverse-string``](https://github.com/HDTran/javascript-cardio/tree/master/reverse-string). Reverse the characters in a string.
+* [``/sorting``](https://github.com/HDTran/javascript-cardio/tree/master/sorting). Implement bubbleSort, selectionSort, and mergeSort.
+* [``/stack``](https://github.com/HDTran/javascript-cardio/tree/master/stack). Implement a Stack class with ``push()``, ``pop()``, and ``peek()`` methods.
+* [``/steps``](https://github.com/HDTran/javascript-cardio/tree/master/steps). Write a function that accepts a positive intenger ``n`` and consoles a staircase with ``n`` levels with ``#`` character.
+* [``/titlecase``](https://github.com/HDTran/javascript-cardio/tree/master/titlecase). Titlecase a string of words.
+* [``/tree``](https://github.com/HDTran/javascript-cardio/tree/master/tree). Implement Tree and Node classes with tree-traversals with breadth-first and depth-first traversals.
+* [``/tree-levelwidth``](https://github.com/HDTran/javascript-cardio/tree/master/tree-levelwidth). Determine the width of the tree at each level given a root node.
+* [``/vowels``](https://github.com/HDTran/javascript-cardio/tree/master/vowels). Count the number of vowels in a string.
